@@ -57,8 +57,9 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
     let answers = [];
-    answers[0] = a + b + c;
-    answers[1] = a * b * c;
+    console.log(sum(sum(a, b)[0], c));
+    answers[0] = (sum(sum(a, b)[0], c))[0];
+    answers[1] = (multiply(multiply(a, b)[0], c))[0];
     answers[2] = `${a} and ${b} and ${c} sum to ${answers[0]}.`;
     answers[3] = `The product of ${a} and ${b} and ${c} is ${answers[1]}.`
     // console.log(answers);
